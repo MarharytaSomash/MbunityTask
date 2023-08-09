@@ -1,11 +1,10 @@
 'use client';
 import * as React from 'react';
 import { useState } from 'react';
-import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
-interface SmileIconProps extends SvgIconProps {}
+import SvgIcon from '@mui/material/SvgIcon';
 
-function SmileIcon(props: SmileIconProps) {
-  const [isHovered, setIsHovered] = useState<SmileIconState>(false);
+function SmileIcon(props: any) {
+  const [isHovered, setIsHovered] = useState<Boolean>(false);
   const handleMouseEnter = () => {
     setIsHovered(true);
   };

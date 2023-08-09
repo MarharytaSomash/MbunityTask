@@ -2,18 +2,16 @@
 import * as React from 'react';
 import { useState } from 'react';
 import SvgIcon from '@mui/material/SvgIcon';
-import { InstagramIconState } from '@/types/types';
-interface InstagramIconProps extends SvgIconProps {}
 
-function InstagramIcon(props: InstagramIconProps) {
-  const [isHovered, setIsHovered] = useState<InstagramIconState>(false);
-   const handleMouseEnter = () => {
-     setIsHovered(true);
-   };
+function InstagramIcon(props: any) {
+  const [isHovered, setIsHovered] = useState<Boolean>(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
 
-   const handleMouseLeave = () => {
-     setIsHovered(false);
-   };
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <SvgIcon {...props} viewBox="0 0 18 19">
       <svg

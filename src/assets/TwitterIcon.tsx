@@ -1,12 +1,10 @@
 'use client';
 import * as React from 'react';
 import { useState } from 'react';
-import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
-import { TwitterIconState } from '@/types/types';
-interface TwitterIconProps extends SvgIconProps {}
+import SvgIcon from '@mui/material/SvgIcon';
 
-function TwitterIcon(props: TwitterIconProps) {
-  const [isHovered, setIsHovered] = useState<TwitterIconState>(false);
+function TwitterIcon(props: any) {
+  const [isHovered, setIsHovered] = useState<Boolean>(false);
 
   const handleMouseEnter = () => {
     setIsHovered(true);
