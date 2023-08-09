@@ -1,9 +1,7 @@
 import Title from '@/utils/Title';
-import { Box, Stack, Typography } from '@mui/material';
+import { Box } from '@mui/material';
 import React from 'react';
-
-import ConctactBlock from '@/components/Main/Сontact/ConctactBlock';
-import Form from './Сontact/FormBlock';
+import ConctactBlock from '@/components/Main/Contact/ConctactBlock';
 
 function Main() {
   return (
@@ -11,7 +9,6 @@ function Main() {
       <Title />
       <Box style={{ display: 'flex', flexDirection: 'row' }}>
         <ConctactBlock />
-        <Form />
       </Box>
     </>
   );
