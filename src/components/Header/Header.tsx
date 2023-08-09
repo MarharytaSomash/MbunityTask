@@ -8,11 +8,10 @@ import MenuItem from '@mui/material/MenuItem';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
-import menuNavigate from '@/constants/constants';
+import { menuNavigate } from '@/constants/constants';
 import CartIcon from '@/assets/CartIcon';
 import { User } from 'phosphor-react';
 import CustomizedMenus from '../UI/CustomizedMenu/CustomizedMenu';
-import MenuNavigate from '../UI/MenuNavigate';
 
 function Header() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -35,6 +34,7 @@ function Header() {
           flexDirection: 'row',
           alignItems: 'center',
           mt: 5.7,
+          paddingX: '100px',
         }}
       >
         <Typography
