@@ -23,6 +23,7 @@ function Title() {
             fontStyle: 'normal',
             fontWeight: '700',
             lineFeight: 'normal',
+            marginTop: '20px',
           }}
         >
           Contact Us
@@ -36,6 +37,7 @@ function Title() {
             fontStyle: ' normal',
             fontWeight: '500',
             lineHeight: 'normal',
+            marginBottom: '50px',
           }}
         >
           Any question or remarks? Just write us a message!

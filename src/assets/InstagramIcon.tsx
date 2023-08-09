@@ -1,7 +1,19 @@
+'use client';
 import * as React from 'react';
+import { useState } from 'react';
 import SvgIcon from '@mui/material/SvgIcon';
+import { InstagramIconState } from '@/types/types';
+interface InstagramIconProps extends SvgIconProps {}
 
-function InstagramIcon(props: any) {
+function InstagramIcon(props: InstagramIconProps) {
+  const [isHovered, setIsHovered] = useState<InstagramIconState>(false);
+   const handleMouseEnter = () => {
+     setIsHovered(true);
+   };
+
+   const handleMouseLeave = () => {
+     setIsHovered(false);
+   };
   return (
     <SvgIcon {...props} viewBox="0 0 18 19">
       <svg
@@ -10,9 +22,11 @@ function InstagramIcon(props: any) {
         viewBox="0 0 30 30"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
         <g id="Group 1000001750">
-          <circle id="Ellipse 796" cx="15" cy="15" r="15" fill="#1B1B1B" />
+          <circle id="Ellipse 796" cx="15" cy="15" r="15" fill={isHovered ? 'white' : '#1B1B1B'} />
           <path
             id="Vector"
             fill-rule="evenodd"
@@ -50,7 +64,7 @@ function InstagramIcon(props: any) {
                      9.75711 19.9272 9.71126C19.8142 9.66542 19.6931 9.64271 19.5712 9.64449C19.4492 9.64627 19.3289 9.67249 19.2173 
                      9.72161C19.1057 9.77073 19.005 9.84175 18.9214 9.93045C18.7586 10.103 18.6695 10.3321 18.673 10.5693C18.6764 10.8064 
                      18.7722 11.0329 18.9399 11.2006C19.1076 11.3683 19.334 11.464 19.5712 11.4675C19.8083 11.4709 20.0375 11.3818 20.21 11.2191Z"
-            fill="white"
+            fill={isHovered ? 'black' : 'white'}
           />
         </g>
       </svg>

@@ -14,8 +14,22 @@ function Social() {
         marginTop: '134px',
       }}
     >
-      <IconButton sx={{ marginRight: '24px' }}>
-        <ContactItem icon={<TwitterIcon style={{ width: 30, height: 30, color: '#000000' }} />} />
+      <IconButton
+        sx={{
+          marginRight: '24px',
+        }}
+      >
+        <ContactItem
+          icon={
+            <TwitterIcon
+              style={{
+                width: 30,
+                height: 30,
+                color: '#000000',
+              }}
+            />
+          }
+        />
       </IconButton>
       <IconButton sx={{ marginRight: '24px' }}>
         <ContactItem icon={<InstagramIcon style={{ width: 30, height: 30, color: '#000000' }} />} />

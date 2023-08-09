@@ -1,7 +1,18 @@
+'use client';
 import * as React from 'react';
-import SvgIcon from '@mui/material/SvgIcon';
+import { useState } from 'react';
+import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
+interface SmileIconProps extends SvgIconProps {}
 
-function SmileIcon(props: any) {
+function SmileIcon(props: SmileIconProps) {
+  const [isHovered, setIsHovered] = useState<SmileIconState>(false);
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
   return (
     <SvgIcon {...props} viewBox="0 0 18 19">
       <svg
@@ -10,8 +21,10 @@ function SmileIcon(props: any) {
         height="30"
         viewBox="0 0 30 30"
         fill="none"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
-        <circle cx="15" cy="15" r="15" fill="#1B1B1B" />
+        <circle cx="15" cy="15" r="15" fill={isHovered ? 'white' : '#1B1B1B'} />
         <path
           d="M20.6985 10.8295C19.7258 10.4391 18.6995 10.1605 17.6451 10.0006C17.6355 9.99916 17.6257 10.0004
            17.617 10.004C17.6082 10.0077 17.601 10.0137 17.5963 10.0211C17.4641 10.2261 17.3179 10.4942 17.2157 
@@ -42,7 +55,7 @@ function SmileIcon(props: any) {
                 16.8208 13.0129 16.8208ZM17.9966 16.8208C17.2579 16.8208 16.6485 16.2272 16.6485 15.4991C16.6485 
                 14.7702 17.2457 14.1765 17.9966 14.1765C18.7532 14.1765 19.3569 14.7751 19.3447 15.4991C19.3447 
                 16.2272 18.7532 16.8208 17.9966 16.8208Z"
-          fill="white"
+          fill={isHovered ? 'black' : 'white'}
         />
       </svg>
     </SvgIcon>

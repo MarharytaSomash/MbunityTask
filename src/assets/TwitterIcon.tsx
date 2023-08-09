@@ -1,9 +1,28 @@
+'use client';
 import * as React from 'react';
-import SvgIcon from '@mui/material/SvgIcon';
+import { useState } from 'react';
+import SvgIcon, { SvgIconProps } from '@mui/material/SvgIcon';
+import { TwitterIconState } from '@/types/types';
+interface TwitterIconProps extends SvgIconProps {}
 
-function TwitterIcon(props: any) {
+function TwitterIcon(props: TwitterIconProps) {
+  const [isHovered, setIsHovered] = useState<TwitterIconState>(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
-    <SvgIcon {...props} viewBox="0 0 18 19">
+    <SvgIcon
+      {...props}
+      viewBox="0 0 18 19"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <svg
         width="30"
         height="30"
@@ -12,7 +31,7 @@ function TwitterIcon(props: any) {
         xmlns="http://www.w3.org/2000/svg"
       >
         <g id="Group 1000001749">
-          <circle id="Ellipse 795" cx="15" cy="15" r="15" fill="#1B1B1B" />
+          <circle id="Ellipse 795" cx="15" cy="15" r="15" fill={isHovered ? 'white' : '#1B1B1B'} />
           <path
             id="Vector"
             d="M23 10.4255C22.4484 10.6598 21.8481 10.8284 21.2298 10.8941C21.8717 10.5185 22.3525 9.92521 
@@ -24,7 +43,7 @@ function TwitterIcon(props: any) {
               16.3314 9.87658 16.3118 9.68549 16.2852C10.0749 17.4852 11.2087 18.3568 12.5589 18.3852C11.5026 19.2 10.1794 19.6793 
               8.7427 19.6793C8.48492 19.6793 8.24697 19.6704 8 19.642C9.36282 20.503 10.9798 21 12.7212 21C18.3744 21 21.4677 
               16.3882 21.4677 12.3852C21.4677 12.2539 21.4677 12.1225 21.4587 11.9911C22.0572 11.5598 22.5818 11.0254 23 10.4255Z"
-            fill="white"
+            fill={isHovered ? 'black' : 'white'}
           />
         </g>
       </svg>
