@@ -1,3 +1,7 @@
+const warning = {
+  color: '#ff0000',
+  fontSize: '12px',
+};
 const sectionStyles = {
   width: '491px',
   height: '647px',
@@ -64,11 +68,7 @@ const subscribeTitleStyle = {
   ml: '14px',
   mb: '29px',
 };
-const warning = {
-  color: '#ff0000',
-  fontSize: '12px',
-  mt: '3px',
-};
+
 const subscribeInput = {
   width: '172px',
   borderRadius: '4px',

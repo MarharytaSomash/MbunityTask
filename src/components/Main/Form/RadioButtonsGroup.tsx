@@ -3,7 +3,7 @@ import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
-import { radioStyle } from '@/constants/constants';
+import { radioStyle } from '@/components/UI/CommonStyle';
 
 export default function RadioButtonsGroup() {
   return (
