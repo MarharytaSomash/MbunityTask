@@ -6,9 +6,10 @@ import { UserInterface } from '@/types/types';
 import { validationSchema } from '@/utils/validationShema';
 import { inputItems } from '@/constants/constants';
 import RadioButtonsGroup from './RadioButtonsGroup';
-import { radioStyle } from '@/constants/constants';
 import styles from './FormBlock.module.scss';
 import MessageInput from './MessageInput';
+import renderErrorMessage from '@/utils/renderErrorMessage';
+import { radioStyle } from '@/components/UI/CommonStyle';
 import Image from 'next/image';
 
 function FormBlock() {
@@ -16,12 +17,6 @@ function FormBlock() {
     alert('You submited your data');
   };
 
-  const renderErrorMessage = (name: string, touched: any, errors: any) => {
-    if (touched[name] && errors[name]) {
-      return <div className={styles.warning}>{errors[name]}</div>;
-    }
-    return null;
-  };
   return (
     <>
       <div>

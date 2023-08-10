@@ -5,7 +5,7 @@ const ContactItem = ({ icon, text }: { icon: any; text?: String }) => (
     sx={{
       display: 'flex',
       flexDirection: 'row',
-      marginTop: 6.3,
+      marginTop: 6,
     }}
   >
     {icon}

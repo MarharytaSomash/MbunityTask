@@ -4,3 +4,6 @@ export interface UserInterface {
   email: string;
   phone: string;
 }
+export interface SubscribeType {
+  email: string;
+}

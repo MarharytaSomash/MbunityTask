@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 import PhoneIcon from '@/assets/PhoneIcon';
 import EmailIcon from '@/assets/EmailIcon';
 import LocationIcon from '@/assets/LocationIcon';
-import { sectionStyles, titleStyles, labelStyles } from '@/constants/constants';
+import { sectionStyles, titleStyles, labelStyles } from '../../UI/CommonStyle';
 import ContactItem from '@/components/Main/Contact/ContactItem';
 import Social from './Social';
 import styles from '../Main.module.scss';

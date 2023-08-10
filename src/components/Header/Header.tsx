@@ -35,6 +35,8 @@ function Header() {
           alignItems: 'center',
           mt: 5.7,
           paddingX: '100px',
+          width: '1440px',
+          background: '#f9f9f9',
         }}
       >
         <Typography

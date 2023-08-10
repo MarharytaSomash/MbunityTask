@@ -10,44 +10,8 @@ const inputItems = [
     type: 'number',
   },
 ];
+const ColumnFooter1 = ['About', 'Contact', 'Blogs'];
+const ColumnFooter2 = ['Privacy Policy', 'Terms & Services', 'Terms of Use', 'Refund Policy'];
+const ColumnFooter3 = ['Techlabz Keybox', 'Downloads'];
 
-const sectionStyles = {
-  width: '491px',
-  height: '647px',
-  backgroundColor: '#000',
-  borderRadius: '10px',
-  margin: '10px',
-};
-const titleStyles = {
-  color: '#FFF',
-  fontFamily: 'Poppins',
-  fontSize: '28px',
-  fontStyle: 'normal',
-  fontWeight: '600',
-  lineHeight: 'normal',
-  marginTop: '40px',
-  marginLeft: '40px',
-};
-
-const labelStyles = {
-  color: '#C9C9C9',
-  fontFamily: 'Poppins',
-  fontSize: '18px',
-  fontStyle: 'normal',
-  fontWeight: '400',
-  lineHeight: 'normal',
-  marginLeft: '40px',
-  marginTop: '6px',
-};
-const radioStyle = {
-  width: '92px',
-  height: '20.4px',
-  color: '#000',
-  fontFamily: 'Poppins',
-  fontSize: '12px',
-  fontStyle: 'normal',
-  fontWeight: '400',
-  lineHeight: '20px',
-};
-
-export { menuNavigate, sectionStyles, titleStyles, labelStyles, inputItems, radioStyle };
+export { menuNavigate, inputItems, ColumnFooter1, ColumnFooter3, ColumnFooter2 };
