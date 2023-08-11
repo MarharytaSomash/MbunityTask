@@ -12,7 +12,7 @@ const sectionStyles = {
 const titleStyles = {
   color: '#FFF',
   fontFamily: 'Poppins',
-  fontSize: '28px',
+  fontSize: '1.75rem',
   fontStyle: 'normal',
   fontWeight: '600',
   lineHeight: 'normal',

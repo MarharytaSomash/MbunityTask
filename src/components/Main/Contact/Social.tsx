@@ -10,8 +10,15 @@ function Social() {
     <Box
       sx={{
         display: 'flex',
+        justifyContent: 'center',
         flexDirection: 'row',
         marginTop: '134px',
+        '@media (max-width:950px)': {
+          width: '100%',
+          margin: '50px auto',
+          textAlign: 'center',
+          alignItems: 'center',
+        },
       }}
     >
       <IconButton

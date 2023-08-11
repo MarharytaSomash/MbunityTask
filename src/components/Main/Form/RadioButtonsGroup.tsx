@@ -12,7 +12,16 @@ export default function RadioButtonsGroup() {
         row
         aria-labelledby="demo-row-radio-buttons-group-label"
         name="row-radio-buttons-group"
-        sx={{ mt: 1.8 }}
+        sx={{
+          mt: 1.8,
+          '@media (max-width: 950px)': {
+            width: '460px',
+            marginTop: '10px',
+            fontSize: '10px',
+            margingLeft: '3px',
+            marginRight: '6px',
+          },
+        }}
       >
         <FormControlLabel
           sx={{

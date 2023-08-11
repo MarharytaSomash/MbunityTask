@@ -6,12 +6,19 @@ const ContactItem = ({ icon, text }: { icon: any; text?: String }) => (
       display: 'flex',
       flexDirection: 'row',
       marginTop: 6,
+      '@media (max-width:950px)': {
+        flexDirection: 'column',
+        width: '100%',
+        margin: '10px auto',
+        textAlign: 'center',
+        alignItems: 'center',
+      },
     }}
   >
     {icon}
     {text && (
       <Typography
-        style={{
+        sx={{
           fontFamily: 'Poppins',
           fontSize: '16px',
           fontStyle: 'normal',
@@ -22,6 +29,14 @@ const ContactItem = ({ icon, text }: { icon: any; text?: String }) => (
           maxWidth: '288px',
           minWidth: '24px',
           maxHeight: 6,
+          '@media (max-width:950px)': {
+            flexDirection: 'column',
+            width: '100%',
+            margin: '10px auto',
+            fontSize: '12px',
+            textAlign: 'center',
+            alignItems: 'center',
+          },
         }}
       >
         {text}

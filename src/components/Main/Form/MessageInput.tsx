@@ -21,6 +21,7 @@ function MessageInput() {
         fontStyle: 'normal',
         fontWeight: ' 500',
         lineHeight: '20px',
+        '@media (max-width: 950px)': { mt: '25px', width: '278px' },
       }}
       variant="standard"
     />

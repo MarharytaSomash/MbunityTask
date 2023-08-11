@@ -22,11 +22,51 @@ function ConctactBlock() {
         background: '#FFF',
         boxShadow: '0px 0px 60px 30px rgba(0, 0, 0, 0.03)',
         margin: '0 auto',
+        '@media (max-width: 950px)': {
+          display: 'flex',
+          flexDirection: 'column',
+          width: '310px',
+          height: '1220px',
+        },
       }}
     >
-      <Box sx={sectionStyles}>
-        <Typography sx={titleStyles}>Contact Information</Typography>
-        <Typography sx={labelStyles}>Say something to start a live chat!</Typography>
+      <Box
+        sx={{
+          ...sectionStyles,
+          '@media (max-width:950px)': {
+            display: 'flex',
+            flexDirection: 'column',
+            width: '310px',
+          },
+        }}
+      >
+        <Typography
+          sx={{
+            ...titleStyles,
+            '@media (max-width:950px)': {
+              width: '100%',
+              fontSize: '1.25rem',
+              textAlign: 'center',
+              margin: '15px auto',
+              alignItems: 'center',
+            },
+          }}
+        >
+          Contact Information
+        </Typography>
+        <Typography
+          sx={{
+            ...labelStyles,
+            '@media (max-width:950px)': {
+              width: '100%',
+              fontSize: '0.7rem',
+              textAlign: 'center',
+              margin: '6px auto',
+            },
+          }}
+        >
+          Say something to start a live chat!
+        </Typography>
 
         <Box
           sx={{
@@ -34,9 +74,15 @@ function ConctactBlock() {
             flexDirection: 'column',
             alignItems: 'flex-start',
             maxWidth: '288px',
-            maxHeight: 24.5,
+            height: 24.5,
             marginLeft: 5,
             marginTop: '60px',
+            '@media (max-width:950px)': {
+              height: '397px',
+              alignItems: 'center',
+              marginLeft: 2,
+              marginTop: '12px',
+            },
           }}
         >
           <ContactItem
@@ -67,6 +113,9 @@ function ConctactBlock() {
               height: '100%',
               background: '#1a1a1a',
               borderRadius: '50%',
+              '@media (max-width: 950px)': {
+                display: 'none',
+              },
             }}
           >
             <Box className={styles.smallCircle} />

@@ -52,6 +52,15 @@ function FormBlock() {
                         fontStyle: 'normal',
                         fontWeight: '500',
                         lineHeight: '20px',
+                        '@media (max-width: 1120px)': {
+                          width: '260px',
+                          mr: 3,
+                          mb: 4,
+                        },
+                        '@media (max-width: 950px)': {
+                          width: '278px',
+                          marginTop: '10px',
+                        },
                       }}
                       variant="standard"
                     />
@@ -65,6 +74,12 @@ function FormBlock() {
                   radioStyle,
                   fontSize: '14px',
                   fontWeight: 600,
+                  '@media (max-width: 1120px)': {
+                    mt: '25px',
+                  },
+                  '@media (max-width: 950px)': {
+                    mt: '10px',
+                  },
                 }}
               >
                 Select Subject?
