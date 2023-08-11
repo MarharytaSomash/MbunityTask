@@ -27,13 +27,13 @@ export default function CustomizedMenus() {
         onClick={handleClick}
         sx={{
           minWidth: 90,
-          color: '#1F1F1F',
           fontFamily: 'Roboto',
           fontSize: 16,
           fontWeight: 400,
           lineHeight: 'normal',
           textTransform: 'none',
           cursor: 'pointer',
+          color: isOpen ? '#000' : '#1F1F1F',
         }}
       >
         Features
