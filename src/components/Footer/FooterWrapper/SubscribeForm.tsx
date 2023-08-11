@@ -11,6 +11,7 @@ import {
 import renderErrorMessage from '@/utils/renderErrorMessage';
 import { validationSchema } from '@/utils/validationShema';
 import { Formik, Form, Field } from 'formik';
+import styles from './FooterWrapperStyle.module.scss';
 
 function SubscribeForm() {
   const handleSubmit = (values: SubscribeType) => {
@@ -19,6 +20,7 @@ function SubscribeForm() {
 
   return (
     <Box
+      className={styles.subscribe_form}
       sx={{
         width: '304px',
         height: '184px',
@@ -26,6 +28,12 @@ function SubscribeForm() {
         background: '#131313',
         mt: '19px',
         mr: '80px',
+        ml: '20px',
+
+        '@media (max-width: 950px)': {
+          width: '320px',
+          height: '175px',
+        },
       }}
     >
       <Typography sx={{ ...subscribeTitleStyle }}> Join Our Newsletter</Typography>

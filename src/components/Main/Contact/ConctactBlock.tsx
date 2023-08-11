@@ -26,7 +26,7 @@ function ConctactBlock() {
           display: 'flex',
           flexDirection: 'column',
           width: '310px',
-          height: '1220px',
+          height: '1280px',
         },
       }}
     >

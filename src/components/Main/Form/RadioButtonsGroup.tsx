@@ -18,8 +18,6 @@ export default function RadioButtonsGroup() {
             width: '460px',
             marginTop: '10px',
             fontSize: '10px',
-            margingLeft: '3px',
-            marginRight: '6px',
           },
         }}
       >

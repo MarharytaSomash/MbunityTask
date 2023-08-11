@@ -4,10 +4,12 @@ import ContactItem from '../../Main/Contact/ContactItem';
 import EmailIcon from '@/assets/EmailIcon';
 import PhoneIcon from '@/assets/PhoneIcon';
 import LocationIcon from '@/assets/LocationIcon';
+import styles from './FooterWrapperStyle.module.scss';
 
 function FooterBlockContact() {
   return (
     <Box
+      className={styles.footer_block_contact}
       sx={{
         display: 'flex',
         flexDirection: 'column',
@@ -15,6 +17,9 @@ function FooterBlockContact() {
         maxWidth: '331px',
         maxHeight: 23.4,
         marginLeft: 12.5,
+        '@media (max-width: 950px)': {
+          marginLeft: '20px',
+        },
       }}
     >
       <Typography

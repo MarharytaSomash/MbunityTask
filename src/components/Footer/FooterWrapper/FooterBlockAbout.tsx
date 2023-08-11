@@ -2,10 +2,12 @@ import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
 import { commonTypographyStyles, footerWrapperStyle } from '../../UI/CommonStyle';
 import { ColumnFooter1, ColumnFooter2, ColumnFooter3 } from '@/constants/constants';
+import styles from './FooterWrapperStyle.module.scss';
 
 function FooterBlockAbout() {
   return (
     <Grid
+      className={styles.footer_block_about}
       container
       style={{
         ...footerWrapperStyle,

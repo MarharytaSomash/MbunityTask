@@ -9,7 +9,7 @@ function Footer() {
         flexDirection="column"
         sx={{
           width: '100%',
-          height: '479px',
+          height: '580px',
           background: '#000',
           mt: '50px',
           alignItems: 'center',
@@ -26,18 +26,26 @@ function Footer() {
             margin: '0 auto',
             textAlign: 'center',
             mt: '80px',
+
+            '@media (max-width: 950px)': {
+              mt: '19px',
+            },
           }}
         >
           Logo Here
         </Typography>
 
         <Divider
-          style={{
+          sx={{
             width: '1280.5px',
             height: '2px',
             background: '#FFF',
             marginTop: '45px',
             marginLeft: '80px',
+            '@media (max-width: 950px)': {
+              width: '90%',
+              margin: '20px auto',
+            },
           }}
         />
         <FooterWrapper />

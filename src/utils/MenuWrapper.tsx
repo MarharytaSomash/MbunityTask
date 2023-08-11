@@ -32,9 +32,10 @@ function MenuWrapper() {
           display: { xs: 'none', md: 'flex' },
         }}
       >
-        {menuNavigate.map((el: string) => (
+        {menuNavigate.map((el: string, index) => (
           <Typography
             onClick={() => showAlert({ el })}
+            key={index}
             sx={{
               minWidth: 90,
               color: '#1F1F1F',
